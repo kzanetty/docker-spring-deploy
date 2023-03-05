@@ -77,7 +77,7 @@ jobs:
   deploy:
     name: Publica app ACI
     needs: push-image
-    runs-on: ubunto-latest
+    runs-on: ubuntu-latest
 
     steps:
       - name: login via Azure CLI
