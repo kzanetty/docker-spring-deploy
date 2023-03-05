@@ -33,7 +33,7 @@ jobs:
       - name: Análise SonarCloud
         run: ./mvnw verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=lab-crescer-pipeline
         env:
-          SONAR_TOKEN: ${{ secters.SONAR_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
 
   tests:
     name: Testes Automatizados
